@@ -129,7 +129,7 @@ public:
 
 class FourInRow :public Board{
 public:
-    FourInRow(); //class
+    FourInRow();
     bool update_board (int x , int y, char mark) override;
     void display_board() override;
     bool is_winner() override;
@@ -137,7 +137,7 @@ public:
     bool game_is_over() override;
     bool chk_columns();
     bool chk_rows();
-    bool chk_diags();
+    bool chk_diags();//ai
 };
 
 
