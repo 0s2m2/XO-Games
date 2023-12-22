@@ -48,9 +48,9 @@ void Third_Game::display_board() {
     cout << endl;
 }
 
-// Returns true if there is any winner
-// either X or O
-// Written in a complex way. DO NOT DO LIKE THIS.
+
+
+
 bool Third_Game::is_winner() {
     if (n_moves == 24 ) {
        for (int i = 0; i < 5; ++i) {
@@ -115,12 +115,12 @@ bool Third_Game::is_winner() {
     return false;
 }
 
-// Return true if 9 moves are done and no winner
+// Return true if 24 moves are done and no winner
     bool Third_Game::is_draw() {
         return (n_moves == 24 );
     }
 
     bool Third_Game::game_is_over() {
-        return n_moves >= 24;
+        return (n_moves >= 24);
     }
 
