@@ -136,8 +136,8 @@ public:
     bool is_draw() override;
     bool game_is_over() override;
     bool chk_columns();
-    bool chk_rows();
-    bool chk_diags();//ai
+     bool chk_rows();
+    bool chk_diags();//aifn
 };
 
 
